@@ -34,24 +34,17 @@ The metrics we will show are:
 ## Architecture Before Hardening / Security Controls
 ![Architecture Before Hardening _ Security Controls](https://github.com/JoshKing3/Azure-SOC/assets/165087957/4aedd8c0-96ec-48cd-8c5b-c582ec354075)
 
+For the "BEFORE" metrics, all resources were initially deployed and exposed to the internet. The Virtual Machines had their Network Security Groups(NSG) and built-in firewalls configured with unrestricted access, it was wide open to the Internet, while all other resources were deployed with public endpoints accessible from the Internet, rendering Private Endpoints unnecessary.
 
 ## Architecture After Hardening / Security Controls
 ![Architecture After Hardening _ Security Controls](https://github.com/JoshKing3/Azure-SOC/assets/165087957/014c864c-44cc-4482-a5b4-8334d7b5571f)
 
-
-This honeynet consists of the following:
-
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 Windows, 1 Linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel (SIEM)
-
-For the "BEFORE" metrics, all resources were initially deployed and exposed to the internet. The Virtual Machines had their Network Security Groups(NSG) and built-in firewalls configured with unrestricted access, it was wide open to the Internet, while all other resources were deployed with public endpoints accessible from the Internet, rendering Private Endpoints unnecessary.
-
 For the "AFTER" metrics, I hardened the Network Security Groups by blocking ALL traffic except for my admin workstation, and all other resources were safe due to their built-in firewalls and Private Endpoint configured. 
+
+## Analytics Rule in Sentinel
+<img width="887" alt="CustomRules" src="https://github.com/JoshKing3/Azure-SOC/assets/165087957/523bf6a0-9325-4a91-98c6-cb26813d06c0">
+
+
 
 ## Attack Maps Before Hardening / Security Controls
 <img width="673" alt="nsg-malicious-allowed-in" src="https://github.com/JoshKing3/Azure-SOC/assets/165087957/866518a5-2917-4c05-95fd-bd2831778765">
