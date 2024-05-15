@@ -15,7 +15,7 @@ Resources, Regulations, and Technologies Used:
 
 - Azure Virtual Network (VNet)
 - Azure Network Security Group (NSG)
-- Virtual Machines (1x Windows 10 Pro, 1x Linux Server)
+- Virtual Machines (2x Windows 10 Pro, 1x Linux Server)
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel (SIEM)
