@@ -1,7 +1,8 @@
 # Azure-SOC
 
 # Azure SOC & Honeynet (with live traffic)
-![Azure SOC vpd](https://github.com/JoshKing3/Azure-SOC/assets/165087957/098ed1c5-ef54-4fe4-8afd-0d5e94001842)
+![flow](https://github.com/JoshKing3/Azure-SOC/assets/165087957/47c0fbb2-d87f-4671-9f80-6a781ae2f00f)
+
 
 
 ## Introduction
@@ -32,12 +33,15 @@ The metrics we will show are:
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Before Hardening _ Security Controls](https://github.com/JoshKing3/Azure-SOC/assets/165087957/4aedd8c0-96ec-48cd-8c5b-c582ec354075)
+![BeforeSC drawio](https://github.com/JoshKing3/Azure-SOC/assets/165087957/96d62f1d-153d-413c-b995-f4721f184c79)
 
-For the "BEFORE" metrics, all resources were initially deployed and exposed to the internet. The Virtual Machines had their Network Security Groups(NSG) and built-in firewalls configured with unrestricted access, it was wide open to the Internet, while all other resources were deployed with public endpoints accessible from the Internet, rendering Private Endpoints unnecessary.
+
+For the "BEFORE" metrics, all resources were deployed and exposed to the internet. The Virtual Machines had their Network Security Groups(NSG) and built-in firewalls configured with unrestricted access, it was wide open to the Internet, while all other resources were deployed with public endpoints accessible from the Internet, rendering Private Endpoints unnecessary.
 
 ## Architecture After Hardening / Security Controls
-![Architecture After Hardening _ Security Controls](https://github.com/JoshKing3/Azure-SOC/assets/165087957/014c864c-44cc-4482-a5b4-8334d7b5571f)
+![AfterSC drawio](https://github.com/JoshKing3/Azure-SOC/assets/165087957/26cc24a0-6286-42f2-acad-271a6ed5a173)
+
+
 
 For the "AFTER" metrics, I hardened the Network Security Groups by blocking ALL traffic except for my admin workstation, and all other resources were safe due to their built-in firewalls and Private Endpoint configured. 
 
