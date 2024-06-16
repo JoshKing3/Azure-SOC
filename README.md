@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In this project, I configured a cloud-based SOC in Azure, using Microsoft Sentinel as our SIEM. Set up logging, alerts, and practiced incident response against live malicious traffic.
+In this project, I configured a cloud-based SOC in Azure, using Microsoft Sentinel as our SIEM. Set up logging, and alerts, and practiced incident response against live malicious traffic.
 
 This small honeynet in Azure ingests log sources from different resources into a Log Analytics workspace, which Microsoft Sentinel then uses to create attack maps, trigger alerts, and create incidents. I documented security metrics in the insecure environment for 24 hours, hardened the environment by applying security controls, recorded the metrics for another 24 hours, and then produced the results below. 
 
