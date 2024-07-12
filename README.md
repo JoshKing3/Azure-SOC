@@ -22,7 +22,7 @@ Resources, Regulations, and Technologies Used:
 - Microsoft Sentinel (SIEM)
 - Microsoft Defender for Cloud
 - Log Analytics Workspace with Kusto Query Language (KQL) Queries
-- NIST SP 800-53 Revision 4
+- NIST SP 800-53 Revision 5
 
 The metrics we will show are:
 
